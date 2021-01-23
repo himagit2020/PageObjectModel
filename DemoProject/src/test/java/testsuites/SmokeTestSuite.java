@@ -65,6 +65,10 @@ public void VerifyUserAct() throws Exception {
  hp = new HomePage(driver);
  hp.VerifyHomepageContent();
 }
+@Test
+public void VerifyProductCheckupt() {
+	
+}
 
 @Test
 public void VerifyUserLogout() throws Exception {
