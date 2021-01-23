@@ -13,6 +13,7 @@ import pages.LoginPage;
 import pages.LogoutPage;
 import utility.BaseClass;
 
+// Author - Sid
 public class SmokeTestSuite<LandingPage> {
 	static WebDriver driver = null;
 	String url=("http://demowebshop.tricentis.com/");		
