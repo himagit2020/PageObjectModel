@@ -5,6 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>
 
  <dependencies>
+ 
+ <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.2.18</version>
+</dependency>
+ 
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>

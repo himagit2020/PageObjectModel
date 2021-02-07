@@ -8,9 +8,9 @@
     <classes>
       <class name="testsuites.SmokeTestSuite">
         <methods>
+          <include name="VerifyUserLogin"/>
           <include name="quitdriver"/>
           <include name="Setup"/>
-          <include name="VerifyUserAct"/>
         </methods>
       </class> <!-- testsuites.SmokeTestSuite -->
     </classes>

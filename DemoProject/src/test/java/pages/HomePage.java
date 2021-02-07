@@ -38,7 +38,7 @@ public class HomePage {
 	public void VerifyHomepageContent() {
 		props = p.ReadProperty("assertdatafile");
 		
-		String actName = lnk_ActName.getTagName();
+		String actName = lnk_ActName.getText();
 		String expName = props.getProperty("useract");
 		System.out.println(actName + "    " + expName);
 		

@@ -24,13 +24,24 @@ public class DefaultPage {
 	}
 	
 	// Actions
-	public void ClickonLoginLink() 
+	public void ClickonLink(String linkName) 
 	{
 		props = p.ReadProperty("propertyfile");
+		
+		
+		//System.out.println(props);
+		
 		//String result = props.getProperty("lnk_Login");
+		//System.out.println(result);
 		// Web Elements for this class	
-		WebElement wb_lnk_login = dr.findElement(By.xpath(props.getProperty("lnk_Login")));	
-		wb_lnk_login.click();    	
+		
+		String value = props.getProperty("generic"); // //*[contains(text(),"
+		
+		System.out.println(value+linkName+"\")]");   //-----//*[contains(text(),"Log in")]
+		
+	
+		WebElement wb_lnk = dr.findElement(By.xpath(value+linkName+"\")]"));	
+		wb_lnk.click();    	
 	}
 		
 }

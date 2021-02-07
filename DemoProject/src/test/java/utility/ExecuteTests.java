@@ -19,7 +19,7 @@ public class ExecuteTests {
 	@BeforeTest
 	public void OpenApp() throws Exception {
 		String url=("http://www.google.com/");
-		String path = "C:\\Users\\17209\\eclipse-workspace\\DemoProject\\drivers\\IEDriverServer.exe";
+		String path = "C:\\Users\\anand\\Desktop\\POM_Project\\DemoProject\\drivers\\chromedriver.exe";
 		System.setProperty("webdriver.ie.driver", path);
 		WebDriver dr = new InternetExplorerDriver();
 		driver=dr;
