@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="execute.DemoWebShop">
+      <class name="testsuites.DBvalidationTestSuite">
         <methods>
-          <include name="VerifyUserLogin"/>
-          <include name="quitdriver"/>
-          <include name="Setup"/>
+          <include name="TestDB"/>
         </methods>
-      </class> <!-- execute.DemoWebShop -->
+      </class> <!-- testsuites.DBvalidationTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
