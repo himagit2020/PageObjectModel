@@ -45,11 +45,15 @@ public void Setup(String br) throws Exception
 @Test(priority = 0)
 public void VerifyUserLogin() throws Exception {
 	
-	//dp = new DefaultPage(driver);
-	//lp = new LoginPage(driver);	
-	fal = new FetchAllLinks(driver);
+	dp = new DefaultPage(driver);
+	lp = new LoginPage(driver);	
 	
-	fal.getLinks();
+	
+	
+	
+	//fal = new FetchAllLinks(driver);
+	
+	//fal.getLinks();
 	
 //	dp.ClickonLink("Blog");
 //	Thread.sleep(5000);
@@ -59,20 +63,20 @@ public void VerifyUserLogin() throws Exception {
 //	Thread.sleep(5000);
 	
 	//Step-1 Click on Login Link
-//	dp.ClickonLink("Log in");
-//	
-//	
-//	//Step-2 Verify Login Page title
-//	String ExpectedTitle ="Demo Web Shop. Login";
-//	Assert.assertEquals(ExpectedTitle, lp.getLoginPageTitle());
-//	//Step-3 Enter User Name - email
-//	lp.enterUserEmail();
-//	//Step-4 Enter User Password
-//	lp.enterUserPassword();
-//	//Step-5 Click on Login Button
-//	lp.ClickLoginBtn();	
-//	//Step-6 Waiting few seconds ...
-//	Thread.sleep(3000);
+	dp.ClickonLink("Log in");
+	
+	
+	//Step-2 Verify Login Page title
+	String ExpectedTitle ="Demo Web Shop. Login";
+	Assert.assertEquals(ExpectedTitle, lp.getLoginPageTitle());
+	//Step-3 Enter User Name - email
+	lp.enterUserEmail();
+	//Step-4 Enter User Password
+	lp.enterUserPassword();
+	//Step-5 Click on Login Button
+	lp.ClickLoginBtn();	
+	//Step-6 Waiting few seconds ...
+	Thread.sleep(3000);
 }
 
 //@Test(priority=1)
@@ -108,14 +112,14 @@ public void VerifyUserLogin() throws Exception {
 //		
 //}
 //
-//@Test(priority=3)
-//public void VerifyUserLogout() throws Exception {
-//	userlogout = new LogoutPage(driver);
-//	
-//	//Step-1 Click on Logout Link
-//	userlogout.ClickLogoutLink();
-//	//Verification Point here
-//}
+@Test(priority=1)
+public void VerifyUserLogout() throws Exception {
+	userlogout = new LogoutPage(driver);
+	
+	//Step-1 Click on Logout Link
+	userlogout.ClickLogoutLink();
+	//Verification Point here
+}
 
 
 @AfterTest
